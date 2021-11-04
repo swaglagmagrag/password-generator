@@ -10,17 +10,9 @@ local answers = {
     nah = false
 }
 
-local res = answers[text]
-
 local test = ""
 
 local chars = 0
-
-local crash = 0
-
-local answers = ""
-
-local timer = 0
 
 local uses = 0
 
@@ -73,18 +65,20 @@ again()
 end
 
 function again()
-    io.write("Would you like to create more passwords? y/n")
+answers = io.read()
+for k, v in pairs(answers) do
+	io.write("Would you like to create more passwords? y/n")
     print("")
-    answers = io.read()
-    if res == true then
-        first()
-    elseif res == false then
-        io.write("Thank you for using my random password generator!")
-    else
-        io.write("Please either say yes or no!")
-        print("")
-        again()
-    end
+    	if v == true then
+    	   	 first()
+   		 elseif v == false then
+    	    io.write("Thank you for using my random password generator!")
+    	else
+        	io.write("Please either say yes or no!")
+        	print("")
+        	again()
+    	end
+	end
 end
 
 
