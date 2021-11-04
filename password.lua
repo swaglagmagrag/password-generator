@@ -3,9 +3,9 @@ local vars = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "
 local answers = {
     yes = true,
     ye = true,
-    y  = true
+    y  = true,
     -- ...
-    n = false
+    n = false,
     no = false,
     nah = false
 }
