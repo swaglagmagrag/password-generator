@@ -18,7 +18,7 @@ local chars = 0
 
 local crash = 0
 
-local answers = 
+local answers = ""
 
 local timer = 0
 
