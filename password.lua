@@ -1,6 +1,6 @@
 local vars = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "x", "1", "2", "3", "4", "5", "6", "7", "8", "9", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")"}
 
-local answers = {
+local ans = {
     yes = true,
     ye = true,
     y  = true,
@@ -10,16 +10,20 @@ local answers = {
     nah = false
 }
 
+local answers = ans
+
 local test = ""
 
 local chars = 0
+
+local crash = 0
 
 local uses = 0
 
 local passwords = ""
 
 function first()
-
+	answers = ans
     if uses == 0 then 
         io.write("Hello, welcome to my random number generator, what website are you wanting your password to be for? (EX: If your website is google.com then type google)")
     else
@@ -65,9 +69,10 @@ again()
 end
 
 function again()
-answers = io.read()
+io.write("Would you like to create more passwords? y/n")
+print("")
 for k, v in pairs(answers) do
-	io.write("Would you like to create more passwords? y/n")
+	answers = io.read()
     print("")
     	if v == true then
     	   	 first()
