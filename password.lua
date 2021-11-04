@@ -1,12 +1,24 @@
 local vars = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "x", "1", "2", "3", "4", "5", "6", "7", "8", "9", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")"}
 
+local answers = {
+    yes = true,
+    ye = true,
+    y  = true
+    -- ...
+    n = false
+    no = false,
+    nah = false
+}
+
+local res = answers[text]
+
 local test = ""
 
 local chars = 0
 
 local crash = 0
 
-local answers = ""
+local answers = 
 
 local timer = 0
 
@@ -64,9 +76,9 @@ function again()
     io.write("Would you like to create more passwords? y/n")
     print("")
     answers = io.read()
-    if answers == "y" or answers == "ye" or answers == "Y" or answers == "yes" or answers == "yah" or answers == "ya" or answer == "yeah" then
+    if res == true then
         first()
-    elseif answers == "n" or answers == "no" or answers == "nah" or answers == "N" then
+    elseif res == false then
         io.write("Thank you for using my random password generator!")
     else
         io.write("Please either say yes or no!")
