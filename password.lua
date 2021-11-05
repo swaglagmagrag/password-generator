@@ -61,7 +61,7 @@ print(test)
 print("")
 error = 0
 uses = uses + 1
-file = io.open(passwords .. ".txt", "w")
+file = io.open(passwords .. " password.txt", "w")
 file:write(test)
 file:close()
 test = ""
