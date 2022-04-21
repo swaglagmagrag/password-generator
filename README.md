@@ -6,5 +6,4 @@ Next, make sure you have lua properly installed (this is one of the better tutor
 
 Finally, type lua INSERT-FILE-PATH/password.lua and continue :)
 
--------------------------------------------------------------------------------------WARNING--------------------------------------------------------------------------------------
-This will most likely not be able to be used on MacOS or Linux distros, I apologize in advance.
+-------------------------------------------------------------------------------------WARNING-----------------------------------------------------------------------------
