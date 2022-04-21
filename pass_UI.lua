@@ -18,7 +18,7 @@ function ps2()
    if move == "Y" or move == "y" or move == "N" or move == "n" then
       table.insert(ps, move)
       return ps3()
-   else print("Please type either yes or no!")
+   else print("Please type either Y or N!")
         return ps2()
    end
 end
