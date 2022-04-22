@@ -1,4 +1,4 @@
-Random password generator! Free to use with no infringement(s) :p.
+Random password generator! Free to use.
 
 To use this password generator, you need to make sure you have the latest version of lua downloaded (link here: https://www.lua.org/download.html OR http://luabinaries.sourceforge.net/)
 
